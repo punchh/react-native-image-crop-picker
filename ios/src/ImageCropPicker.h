@@ -12,10 +12,10 @@
 
 #if __has_include(<React/RCTBridgeModule.h>)
 #import <React/RCTBridgeModule.h>
-#import <React/RCTImageURLLoader.h>
+//#import <React/RCTImageURLLoader.h>
 #import <React/RCTImageShadowView.h>
 #import <React/RCTImageView.h>
-#import <React/RCTImageLoaderProtocol.h>
+//#import <React/RCTImageLoaderProtocol.h>
 #else
 #import "RCTBridgeModule.h"
 #import "RCTImageURLLoader.h"
