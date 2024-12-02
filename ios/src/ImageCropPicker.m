@@ -6,6 +6,7 @@
 //
 
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <React/RCTImageLoader.h>
 
 #import "ImageCropPicker.h"
 
