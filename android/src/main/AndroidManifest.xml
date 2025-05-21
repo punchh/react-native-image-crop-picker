@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.reactnative.ivpusic.imagepicker">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <queries>
         <intent>
@@ -12,18 +11,18 @@
     <application>
 
         <provider
-            android:name="androidx.core.content.FileProvider"
+            android:name=".IvpusicImagePickerFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
+                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
         </provider>
 
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:windowOptOutEdgeToEdgeEnforcement="true" />
     </application>
 
 </manifest>
